@@ -4,10 +4,14 @@ public class Main {
 
     private static String[] op = { "+", "-", "*", "/" };// Operation set
     public static void main(String[] args) {
-        String question = MakeFormula();
+        for(int i = 0;i < 10000000; i++) {
+            String question = MakeFormula();
+            String ret = Solve(question);
+        }
+        /*String question = MakeFormula();
         System.out.println(question);
         String ret = Solve(question);
-        System.out.println(ret);
+        System.out.println(ret);*/
     }
 
     public static String MakeFormula(){
